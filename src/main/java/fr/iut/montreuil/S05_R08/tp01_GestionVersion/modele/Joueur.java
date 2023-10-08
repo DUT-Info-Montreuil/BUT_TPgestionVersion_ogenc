@@ -140,22 +140,22 @@ public class Joueur {
     public Inventaire getInventaire() { return this.inventaire; }
 
     public void moveUp () {
-        this.yProperty.setValue(this.yProperty.getValue()-vitesseDeDeplacement);
+        this.yProperty.setValue(this.yProperty.getValue()-vitesseDeDeplacement/2);
         direction.setValue("up");
     }
 
     public void moveDown () {
-        this.yProperty.setValue(this.yProperty.getValue()+vitesseDeDeplacement);
+        this.yProperty.setValue(this.yProperty.getValue()+vitesseDeDeplacement/2);
         direction.setValue("down");
     }
 
     public void moveRight () {
-        this.xProperty.setValue(this.xProperty.getValue()+vitesseDeDeplacement);
+        this.xProperty.setValue(this.xProperty.getValue()+vitesseDeDeplacement/2);
         direction.setValue("right");
     }
 
     public void moveLeft () {
-        this.xProperty.setValue(this.xProperty.getValue()-vitesseDeDeplacement);
+        this.xProperty.setValue(this.xProperty.getValue()-vitesseDeDeplacement/2);
         direction.setValue("left");
     }
 
