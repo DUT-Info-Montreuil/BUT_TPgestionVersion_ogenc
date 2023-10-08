@@ -156,7 +156,7 @@ public class Controller implements Initializable {
         initConsole(); // Charge la console
         itemsDescriptionLoader = new ItemDescriptionSwitcher(descriptionLabel);
         armeDescriptionSwitcher= new ArmeDescriptionSwitcher(descriptionArmeLabel);
-        player.setId("player");
+        player.setId("Joueur");
         dialogueVue = new DialogueVue(dialogueLabel,dialoguePane,joueur);
         terrainVue = new TerrainVue(zoneActuelle, joueur, gamePane, tilePane, tilePaneDeco, tilePaneSolid);
         terrainVue.loadMap("0", 9*16, 27*16); // charge la première map (cauchemar)
